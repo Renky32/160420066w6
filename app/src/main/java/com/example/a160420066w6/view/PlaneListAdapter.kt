@@ -27,7 +27,7 @@ class PlaneListAdapter(val planeList:ArrayList<Planes>): RecyclerView.Adapter<Pl
     }
 
     override fun onBindViewHolder(holder: PlaneViewHolder, position: Int) {
-        holder.binding.txtID.text=planeList[position].id
+        holder.binding.txtID.text=planeList[position].id.toString()
         holder.binding.txtName.text=planeList[position].name
 
         holder.binding.btnDetail.setOnClickListener(){

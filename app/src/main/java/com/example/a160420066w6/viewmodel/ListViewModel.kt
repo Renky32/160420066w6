@@ -23,7 +23,7 @@ class ListViewModel (application: Application): AndroidViewModel(application){
         loadingLD.value = true
 
         queue = Volley.newRequestQueue( getApplication()  )
-        val url = "http://10.0.0.2/data/planes.json"
+        val url = "http://10.0.2.2/data/planes.json"
 
         val stringRequest = StringRequest(
             Request.Method.GET, url,
