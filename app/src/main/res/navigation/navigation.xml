@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/planeDetailFragment">
+    app:startDestination="@id/planeListFragment">
 
     <fragment
         android:id="@+id/planeListFragment"
         android:name="com.example.a160420066w6.view.PlaneListFragment"
         android:label="fragment_plane_list"
-        tools:layout="@layout/fragment_plane_list" >
+        tools:layout="@layout/fragment_plane_list">
         <action
-            android:id="@+id/actionDetailFragment"
+            android:id="@+id/actionPlaneDetail"
             app:destination="@id/planeDetailFragment" />
     </fragment>
     <fragment
